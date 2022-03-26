@@ -1,0 +1,78 @@
+#containerA {
+  border: 10px solid black;
+  background-color: rgb(148, 74, 74);
+  width: 75vw;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#divA {
+  border: 10px solid rgb(4, 4, 105);
+  background-color: white;
+  width: 70%;
+  height: 50%;
+  padding: 15px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#paragA {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  color: blue;
+}
+
+#containerB {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 20vh;
+  margin-top: 75px;
+}
+
+#divB1 {
+  background-color: blue;
+  height: 25%;
+  width: 70%;
+}
+#divB2 {
+  background-color:  rgb(114, 3, 218);
+  height: 25%;
+  width: 40%;
+}
+#divB3 {
+  background-color: green;
+  height: 25%;
+  width: 60%;
+}
+#divB4 {
+  background-color: yellow;
+  height: 25%;
+  width: 50%;
+}
+
+#containerC {
+  display: flex;
+  margin-top: 75px;
+}
+
+#divC1 {
+  height: 5vh;
+  width: 40%;
+  background-color: red;
+}
+#divC2 {
+  height: 5vh;
+  width: 25%;
+  background-color: rgb(40, 78, 158);
+}
+#divC3 {
+  width: 35%;
+  height: 5vh;
+  background-color: rgb(71, 243, 71);
+}
