@@ -74,7 +74,7 @@ body{
     flex-direction: column;
     background-color: 
     #e5e5e5;
-    width: 300px;
+    width: 270px;
     padding: 20px 40px 40px 40px;
     border-radius: 10px;
     color: #e6005a;
@@ -89,7 +89,7 @@ body{
 }
 
 .form-box input {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     height: 30px;
     border: 2px solid #32b9cd;
     border-radius: 10px;
@@ -104,6 +104,7 @@ body{
     display: flex;
     justify-content: center;
     column-gap: 12px;
+    margin-top: 7px;
 }
 
 .btn {
