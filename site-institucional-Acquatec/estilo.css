@@ -140,3 +140,87 @@ body{
 .container h4, h2 {
     margin: 0;
 }
+
+/* SOBRE NOS */
+
+.sobre-nos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-color: #e5e5e5;
+}
+
+.sobre-nos-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sobre-nos-containers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 175px;
+    text-align: center;
+}
+
+.sobre-nos-containers img {
+    width: 175px;
+}
+
+.sobre-nos-containers h2 {
+    color: #e6005a;
+    font-size: 1.4rem;
+    padding-top: 7px;
+    font-weight: 1000;
+}
+
+.sobre-nos-containers p {
+    font-weight: 1000;
+    font-size: 1.2rem;
+}
+
+/* EQUIPE */
+
+.equipe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: black;
+    height: 90vh;
+}
+
+.equipe-container h1 {
+    color: #32b9cd;
+}
+
+.equipe-container img {
+    width: 150px;
+}
+
+.equipe-container p {
+    color: #E3b062;
+}
+
+.pessoas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+}
+
+.equipe1 {
+    display: flex;
+    align-items: center;
+}
+
+.equipe2 {
+    display: flex;
+    align-items: center;
+}
