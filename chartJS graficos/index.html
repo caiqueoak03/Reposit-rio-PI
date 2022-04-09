@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				min-height: 100vh;
+				margin: 0;
+				background: linear-gradient(orange, rgba(255, 166, 0, 0.705));
+			}
+			.charts {
+				height: 50vh;
+				width: 40vw;
+			}
+			.charts-container {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border: 3px groove black;
+				column-gap: 20px;
+				padding: 100px 50px;
+				box-shadow: 0 2px 10px -2px black;
+				border-radius: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="charts-container">
+			<div>
+				<canvas id="myChart" class="charts"></canvas>
+			</div>
+			<div>
+				<canvas id="myChart2" class="charts"></canvas>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+	const labels = ["11:00", "12:00", "13:00", "14:00", "15:00", "16:00"];
+
+	const data = {
+		labels: labels,
+		datasets: [
+			{
+				label: "Temperatura por hora (°C)",
+				backgroundColor: "rgb(255, 99, 132)",
+				borderColor: "rgb(255, 99, 132)",
+				data: [0, -10, 5, 2, -5, 30, 45],
+			},
+			{
+				label: "Umidade por hora (%)",
+				backgroundColor: "rgb(100, 100, 255)",
+				borderColor: "rgb(100, 100, 255)",
+				data: [20, 10, 13.5, 20, 10, 25, 50],
+			},
+		],
+	};
+
+	const config = {
+		type: "line",
+		data: data,
+		options: {},
+	};
+
+	const labels2 = ["01/05", "02/05", "03/05", "04/05", "05/05", "06	/05"];
+
+	const data2 = {
+		labels: labels2,
+		datasets: [
+			{
+				label: "Temperatura Diária Média (°C)",
+				backgroundColor: "rgb(255, 99, 132)",
+				borderColor: "rgb(255, 99, 132)",
+				data: [0, -10, 5, 2, -5, 30, 45],
+			},
+			{
+				label: "Umidade Diária Média (%)",
+				backgroundColor: "rgb(100, 100, 255)",
+				borderColor: "rgb(100, 100, 255)",
+				data: [20, 10, 13.5, 20, 10, 25, 50],
+			},
+		],
+	};
+
+	const config2 = {
+		type: "bar",
+		data: data2,
+		options: {},
+	};
+</script>
+
+<script>
+	const myChart = new Chart(document.getElementById("myChart"), config);
+	const myChart2 = new Chart(document.getElementById("myChart2"), config2);
+</script>
